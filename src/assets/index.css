@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One&display=swap');
+.principal {
+  height: 700px;
+}
+* {
+  font-family: 'Patua One', cursive;
+}
+/*STANDARD PIZZAS SECTION*/
+.standardPizzasBox {
+  height: 600px;
+  padding-top: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+img.pizzaPicture {
+  height: 150px;
+  width: 150px;
+}
+div.pizzaBox {
+  height: 250px;
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+
+  letter-spacing: 2px;
+}
+div.pizzaBoxButtons {
+  margin-top: 20px;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-start;
+}
+div.pizzaBoxButtons .btn {
+  font-size: 14px;
+}
+
+/*CART SECTION*/
+.cart {
+  border-left: 1px solid black;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 2px;
+}
+.cart h3,
+.customPizzasBox h3 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.cartList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.button-row {
+  width: 100%;
+}
+.itemElement {
+  background: #28a745;
+  color: white;
+  height: 60px;
+  width: 100%;
+
+  margin-top: 10px;
+
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+}
+.itemElement div:first-child {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.itemElement div:nth-child(2) {
+  position: absolute;
+  left: 160px;
+  top: 15px;
+}
+.itemElement div:nth-child(3) {
+  position: absolute;
+  right: 60px;
+  top: 15px;
+}
+.itemElement div:nth-child(4) {
+  position: absolute;
+  right: 5px;
+  top: 13px;
+}
+.material-icons {
+  font-size: 30px;
+  cursor: pointer;
+}
+.totalPrice {
+  position: absolute;
+  width: 90%;
+  border-top: 1px solid black;
+  bottom: 2px;
+}
+.totalPrice span {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+}
+.totalPrice span::after {
+  content: '€';
+}
+
+/*CUSTOM PIZZA SECTION*/
+
+button.togglePizzaView {
+  position: absolute;
+  z-index: 100;
+  color: #28a745;
+}
+.customPizzasBox {
+  height: 600px;
+  padding-top: 10px;
+  padding-right: 10px;
+  display: none;
+}
+.customPizzasBox h2 {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.pizzaSizes,
+.ingredientsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ingredientsList {
+  justify-content: space-around;
+  align-content: stretch;
+}
+
+.ingredientsList span p:first-child {
+  margin-bottom: 1px;
+}
+.ingredientsList span p:nth-child(2) {
+  margin-bottom: 1px;
+  font-size: 10px;
+}
+
+.customPizzaInfo {
+  position: absolute;
+  bottom: 5px;
+  height: 70px;
+  text-align: center;
+}
+.customPizzaInfo span#addCustomPizza {
+  align-self: center;
+  position: absolute;
+  right: 30px;
+}
+.customPizzaInfo span:first-child {
+  font-size: 30px;
+  color: black;
+}
+
+.selectedButton {
+  background: #28a745 !important;
+  color: white !important;
+}
